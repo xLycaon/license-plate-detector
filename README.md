@@ -43,10 +43,14 @@ Start by cloning this repository to your local machine:
   ```
 
 ### 2. **Download Libraries**
+
 - Click on the link above to download the required libraries.
 - **Unzip** the downloaded contents into the root directory of this project.
-
+- After unzipping the libraries, you will find a collection of `.dll` files within the unzipped folder.
+- **Copy** all the `.dll` files from the libraries folder and **paste them** into the `out` folder (or build output folder) when building the project.
+  
 ### 3. **Set Up Your Environment**
+
 - Install a **C++ compiler** appropriate for your system.
 - Install **CMake** if you don’t have it already.
 
