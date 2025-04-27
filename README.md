@@ -34,28 +34,36 @@ All the necessary libraries are provided via a **Google Drive link**. You need t
 
 ## ⚙️ Installation
 
-### 1. **Download Libraries**
+### 1. **Clone the Project**
+
+Start by cloning this repository to your local machine:
+
+  ```bash
+  git clone https://github.com/xLycaon/license-plate-detector.git
+  ```
+
+### 2. **Download Libraries**
 - Click on the link above to download the required libraries.
 - **Unzip** the downloaded contents into the root directory of this project.
 
-### 2. **Set Up Your Environment**
+### 3. **Set Up Your Environment**
 - Install a **C++ compiler** appropriate for your system.
 - Install **CMake** if you don’t have it already.
 
-### 3. **Build the Project**
+### 4. **Build the Project**
 - **Open a terminal/command prompt** and navigate to the project folder.
 - Create a **build directory** and move into it:
   ```bash
   mkdir build
   cd build
   ```
-Run CMake to generate the necessary build files:
+### 5.Run CMake to generate the necessary build files:
 
   ```bash
   cmake ..
   ```
 
-Compile the Project:
+### 6.Compile the Project:
 
   ```bash
   make
