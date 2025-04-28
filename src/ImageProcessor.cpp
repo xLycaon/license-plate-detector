@@ -81,7 +81,7 @@ std::string ImageProcessor::test_OCR_grayScale(const cv::Mat& frame, std::vector
 
     std::string whitelist = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     tesseract::TessBaseAPI tess;
-    if (tess.Init("C:\\Users\\vladm\\source\\repos\\license-plate-detector\\tesseract\\tessdata", "eng",tesseract::OEM_TESSERACT_LSTM_COMBINED)) {
+    if (tess.Init("", "eng",tesseract::OEM_TESSERACT_LSTM_COMBINED)) { //INSERT PATH HERE
         std::cerr << "Could not initialize Tesseract." << std::endl;
         return "TEST";
     }
@@ -134,7 +134,7 @@ std::string ImageProcessor::process_Extract_Adaptive(const cv::Mat& frame, std::
 
     auto worker = [&]() {
         tesseract::TessBaseAPI localTess;
-        if (localTess.Init("C:\\Users\\vladm\\source\\repos\\license-plate-detector\\tesseract\\tessdata", "eng", tesseract::OEM_TESSERACT_LSTM_COMBINED)) {
+        if (localTess.Init("", "eng", tesseract::OEM_TESSERACT_LSTM_COMBINED)) { //INSERT PATH HERE
             std::cerr << "Could not initialize Tesseract." << std::endl;
             return;
         }
